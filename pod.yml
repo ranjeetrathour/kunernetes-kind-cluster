@@ -1,0 +1,14 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: pod-nginx
+  namespace: nginx 
+
+#need to download image what we are run in that pods
+
+spec:
+  containers:
+  -  name: nginx
+     image: nginx:latest
+     ports:
+     -  containerPort: 80
